@@ -34,7 +34,7 @@
         };
 
         delete_word {
-            bindings = <&kp LC(DELETE)>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 31>;
         };
 
