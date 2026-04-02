@@ -24,7 +24,7 @@
         require-prior-idle-ms = <250>;
 
         combo_esc {
-            key-positions = <1 0>;
+            key-positions = <10 11>;
             bindings = <&kp ESCAPE>;
         };
 
