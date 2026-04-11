@@ -57,6 +57,11 @@
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 19>;
         };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <2 4>;
+        };
     };
 
     chosen { zmk,physical-layout = &skeletyl_5col_layout; };
