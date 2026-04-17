@@ -79,8 +79,8 @@
             >;
         };
 
-        Sym {
-            display-name = "Symbol";
+        NavNum {
+            display-name = "Nav";
             bindings = <
   &kp GRAVE  &kp LG(F23)  &kp UP_ARROW  &kp EQUAL    &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PRINTSCREEN
   &trans     &kp LEFT     &kp DOWN      &kp RIGHT    &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
@@ -89,7 +89,7 @@
             >;
         };
 
-        Num {
+        SymMed {
             display-name = "Number";
             bindings = <
   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET          &kp AMPERSAND    &kp ASTERISK  &kp PLUS    &kp MINUS
