@@ -93,7 +93,7 @@
             display-name = "Number";
             bindings = <
   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET          &kp AMPERSAND    &kp ASTERISK  &kp PLUS    &kp MINUS
-  &trans           &trans       &kp PG_UP      &trans      &trans         &kp C_MUTE         &kp C_PAUSE      &trans        &trans      &trans
+  &trans           &trans       &kp PG_UP      &trans      &trans         &kp H              &kp J            &kp K         &kp L       &trans
   &trans           &trans       &kp PAGE_DOWN  &trans      &trans         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREV    &kp C_NEXT  &trans
                                 &trans         &trans      &mo 3          &trans             &trans           &trans
             >;
