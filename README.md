@@ -21,15 +21,12 @@ Current build targets cover:
 Artifacts produced by the build matrix:
 
 - `skeletyl_dongle` for `nice_nano/nrf52840/zmk`
-- `skeletyl_dongle prospector_adapter` for `xiao_ble//zmk`
-- `skeletyl_dongle` for `xiao_ble//zmk`
 - `skeletyl_dongle_oled_nice_nano` artifact for `nice_nano/nrf52840/zmk`
 - `skeletyl_dongle_oled_xiao_ble` artifact for `xiao_ble//zmk`
 - `settings_reset` for `xiao_ble//zmk`
 - `settings_reset` for `nice_nano/nrf52840/zmk`
 - `skeletyl_left` for `nice_nano/nrf52840/zmk`
 - `skeletyl_right` for `nice_nano/nrf52840/zmk`
-- `skeletyl_right_usb_logging` artifact for `nice_nano/nrf52840/zmk`
 
 ## Dongle display
 
