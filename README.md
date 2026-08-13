@@ -22,7 +22,6 @@ Artifacts produced by the build matrix:
 
 - `skeletyl_dongle` for `nice_nano/nrf52840/zmk`
 - `skeletyl_dongle_oled_nice_nano` artifact for `nice_nano/nrf52840/zmk`
-- `skeletyl_dongle_oled_xiao_ble` artifact for `xiao_ble//zmk`
 - `settings_reset` for `xiao_ble//zmk`
 - `settings_reset` for `nice_nano/nrf52840/zmk`
 - `skeletyl_left` for `nice_nano/nrf52840/zmk`
@@ -47,7 +46,8 @@ the display itself:
   how this dongle is physically wired (the board's stock assignment is the
   reverse: SDA = P0.17 / D2, SCL = P0.20 / D3)
 - `boards/shields/dongle_oled/boards/xiao_ble_nrf52840_zmk.overlay` — wires it
-  to `xiao_i2c`: D4 = SDA (P0.04), D5 = SCL (P0.05)
+  to `xiao_i2c`: D4 = SDA (P0.04), D5 = SCL (P0.05). Kept for a possible XIAO
+  dongle; no build target currently uses it
 
 Those board file names must be the fully qualified board target with `/`
 replaced by `_`; Zephyr does not match the bare board name.
