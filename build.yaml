@@ -42,6 +42,13 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: skeletyl_dongle_oled_xiao_ble
+  # Diagnostic build: logs display/I2C init over USB serial. No Studio, since
+  # that snippet wants the same USB CDC endpoint.
+  - board: nice_nano/nrf52840/zmk
+    shield: skeletyl_dongle dongle_oled dongle_display
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    artifact-name: skeletyl_dongle_oled_nice_nano_logging
 
   - board: xiao_ble//zmk
     shield: settings_reset
