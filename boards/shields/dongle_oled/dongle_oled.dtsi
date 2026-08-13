@@ -8,13 +8,9 @@
  *   0.96" SSD1306 -> compatible = "solomon,ssd1306fb"; segment-offset = <0>;
  *   0.91" 128x32  -> height = <32>; multiplex-ratio = <31>; add com-sequential;
  *                    and set CONFIG_LV_Z_VDB_SIZE=32 (see dongle_oled.conf)
+ *
+ * The matching chosen zephyr,display node lives in dongle_oled.overlay.
  */
-
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
 
 &DONGLE_OLED_I2C {
     status = "okay";

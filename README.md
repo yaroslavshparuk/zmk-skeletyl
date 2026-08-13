@@ -45,10 +45,13 @@ the display itself:
 
 - `boards/shields/dongle_oled/dongle_oled.dtsi` — the panel node, defaulting to
   a 1.3" 128x64 SH1106 at address `0x3c`
-- `boards/shields/dongle_oled/boards/nice_nano.overlay` — wires it to
-  `pro_micro_i2c`: D2 = SDA (P0.17), D3 = SCL (P0.20)
-- `boards/shields/dongle_oled/boards/xiao_ble.overlay` — wires it to `xiao_i2c`:
-  D4 = SDA (P0.04), D5 = SCL (P0.05)
+- `boards/shields/dongle_oled/boards/nice_nano_nrf52840_zmk.overlay` — wires it
+  to `pro_micro_i2c`: D2 = SDA (P0.17), D3 = SCL (P0.20)
+- `boards/shields/dongle_oled/boards/xiao_ble_nrf52840_zmk.overlay` — wires it
+  to `xiao_i2c`: D4 = SDA (P0.04), D5 = SCL (P0.05)
+
+Those board file names must be the fully qualified board target with `/`
+replaced by `_`; Zephyr does not match the bare board name.
 - `boards/shields/dongle_oled/dongle_oled.conf` — idle timeout plus commented
   widget options
 
