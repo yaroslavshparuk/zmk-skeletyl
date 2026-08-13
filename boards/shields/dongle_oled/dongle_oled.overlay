@@ -1,0 +1,8 @@
+/*
+ * The OLED itself is board-specific, because the I2C bus label differs per
+ * controller (pro_micro_i2c on nice!nano, xiao_i2c on XIAO BLE). The display
+ * node therefore lives in boards/<board>.overlay, which each include
+ * dongle_oled.dtsi with DONGLE_OLED_I2C set to the right bus.
+ *
+ * This file only exists so that Zephyr discovers `dongle_oled` as a shield.
+ */

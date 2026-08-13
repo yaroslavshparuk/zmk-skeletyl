@@ -31,6 +31,18 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
+  # Dongle with a 128x64 I2C OLED driven by englmaxi/zmk-dongle-display
+  - board: nice_nano/nrf52840/zmk
+    shield: skeletyl_dongle dongle_oled dongle_display
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: skeletyl_dongle_oled_nice_nano
+  - board: xiao_ble//zmk
+    shield: skeletyl_dongle dongle_oled dongle_display
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: skeletyl_dongle_oled_xiao_ble
+
   - board: xiao_ble//zmk
     shield: settings_reset
   - board: nice_nano/nrf52840/zmk

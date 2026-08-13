@@ -1,0 +1,5 @@
+/* OLED on the nice!nano pro micro I2C pins: D2 = SDA (P0.17), D3 = SCL (P0.20). */
+
+#define DONGLE_OLED_I2C pro_micro_i2c
+
+#include "../dongle_oled.dtsi"
