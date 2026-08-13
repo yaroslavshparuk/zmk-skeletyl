@@ -46,7 +46,9 @@ the display itself:
 - `boards/shields/dongle_oled/dongle_oled.dtsi` — the panel node, defaulting to
   a 1.3" 128x64 SH1106 at address `0x3c`
 - `boards/shields/dongle_oled/boards/nice_nano_nrf52840_zmk.overlay` — wires it
-  to `pro_micro_i2c`: D2 = SDA (P0.17), D3 = SCL (P0.20)
+  to `pro_micro_i2c`, overriding the pinctrl to SDA = P0.20, SCL = P0.17 to match
+  how this dongle is physically wired (the board's stock assignment is the
+  reverse: SDA = P0.17 / D2, SCL = P0.20 / D3)
 - `boards/shields/dongle_oled/boards/xiao_ble_nrf52840_zmk.overlay` — wires it
   to `xiao_i2c`: D4 = SDA (P0.04), D5 = SCL (P0.05)
 
