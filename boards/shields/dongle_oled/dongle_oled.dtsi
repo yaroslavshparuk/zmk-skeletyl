@@ -25,8 +25,13 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        segment-remap;
-        com-invdir;
+        /*
+         * segment-remap (columns right-to-left) and com-invdir (rows
+         * bottom-to-top) together rotate the image 180 degrees. The 3D printed
+         * case mounts the panel upside down relative to that, so both are left
+         * off. Re-enable the pair if the case is ever flipped; enabling only one
+         * of them mirrors the image rather than rotating it.
+         */
         inversion-on;
         prechargep = <0x22>;
     };
