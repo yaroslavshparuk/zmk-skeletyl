@@ -62,6 +62,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <3 1>;
         };
+
+        alt+layer1IsLayer1 {
+            bindings = <&mo 1>;
+            key-positions = <11 32>;
+        };
     };
 
     chosen { zmk,physical-layout = &skeletyl_5col_layout; };
